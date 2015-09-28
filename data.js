@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Static Site',
+  title: 'SMSL',
   routes: [
     '/'
   ]

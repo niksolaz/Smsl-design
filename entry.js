@@ -7,4 +7,4 @@ module.exports = function render(locals, callback) {
     var html = React.renderToStaticMarkup(React.createElement(Handler, locals))
     callback(null, '<!DOCTYPE html>' + html)
   })
-}
+};

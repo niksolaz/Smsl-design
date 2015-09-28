@@ -1,0 +1,27 @@
+{
+  "name": "Smsl",
+  "version": "1.0.0",
+  "description": "web design of small",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niksolaz/Smsl-design.git"
+  },
+  "author": "nik solaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niksolaz/Smsl-design/issues"
+  },
+  "homepage": "https://github.com/niksolaz/Smsl-design",
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc1",
+    "static-site-generator-webpack-plugin": "^1.1.2",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}

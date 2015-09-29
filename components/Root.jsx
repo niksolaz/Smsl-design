@@ -1,6 +1,6 @@
-var React = require('react')
-var Router = require('react-router')
-var RouteHandler = Router.RouteHandler
+var React = require('react');
+var Router = require('react-router');
+var RouteHandler = Router.RouteHandler;
 
 var Root = React.createClass({
   render: function () {
@@ -13,8 +13,8 @@ var Root = React.createClass({
           <RouteHandler {...this.props} />
         </body>
       </html>
-    )
+    );
   }
-})
+});
 
 module.exports = Root;

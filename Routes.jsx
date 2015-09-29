@@ -11,6 +11,6 @@ var Routes = (
     <DefaultRoute handler={Index} />
     <Route path='/about' handler={About}/>
   </Route>
-)
+);
 
 module.exports = Routes;

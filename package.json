@@ -4,10 +4,10 @@
   "description": "web design of small",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --progress --colors",
     "dev": "webpack-dev-server --progress --colors",
-    "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",

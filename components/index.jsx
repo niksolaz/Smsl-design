@@ -6,7 +6,7 @@ var Index = React.createClass({
       <main>
         Index component
       </main>
-    )
+    );
   }
 });
 

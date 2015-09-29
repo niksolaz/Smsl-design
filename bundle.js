@@ -54,15 +54,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(1)
-	var Router = __webpack_require__(157)
-	var Routes = __webpack_require__(199)
+	var React = __webpack_require__(1);
+	var Router = __webpack_require__(157);
+	var Routes = __webpack_require__(199);
 
 	module.exports = function render(locals, callback) {
 	  Router.run(Routes, locals.path, function (Handler) {
 	    var html = React.renderToStaticMarkup(React.createElement(Handler, locals))
 	    callback(null, '<!DOCTYPE html>' + html)
-	  })
+	  });
 	};
 
 /***/ },
@@ -24267,28 +24267,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(1)
-	var Router = __webpack_require__(157)
-	var Route = Router.Route
-	var DefaultRoute = Router.DefaultRoute
-	var Root = __webpack_require__(200)
-	var Index = __webpack_require__(201)
+	var React = __webpack_require__(1);
+	var Router = __webpack_require__(157);
+	var Route = Router.Route;
+	var DefaultRoute = Router.DefaultRoute;
+	var Root = __webpack_require__(200);
+	var Index = __webpack_require__(201);
+	var About = __webpack_require__(202);
 
 	var Routes = (
 	  React.createElement(Route, {handler: Root, path: "/"}, 
-	    React.createElement(DefaultRoute, {handler: Index})
+	    React.createElement(DefaultRoute, {handler: Index}), 
+	    React.createElement(Route, {path: "/about", handler: About})
 	  )
-	)
+	);
 
-	module.exports = Routes
+	module.exports = Routes;
 
 /***/ },
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(1)
-	var Router = __webpack_require__(157)
-	var RouteHandler = Router.RouteHandler
+	var React = __webpack_require__(1);
+	var Router = __webpack_require__(157);
+	var RouteHandler = Router.RouteHandler;
 
 	var Root = React.createClass({displayName: "Root",
 	  render: function () {
@@ -24301,9 +24303,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          React.createElement(RouteHandler, React.__spread({},  this.props))
 	        )
 	      )
-	    )
+	    );
 	  }
-	})
+	});
 
 	module.exports = Root;
 
@@ -24319,11 +24321,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement("main", null, 
 	        "Index component"
 	      )
-	    )
+	    );
 	  }
 	});
 
 	module.exports = Index;
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+
+	var About = React.createClass({displayName: "About",
+	  render: function () {
+	    return (
+	      React.createElement("main", null, 
+	        "About component"
+	      )
+	    );
+	  }
+	});
+
+	module.exports = About;
 
 /***/ }
 /******/ ])
